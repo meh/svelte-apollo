@@ -15,8 +15,8 @@
 	"scripts": {
 		"build": "rollup -c",
 		"dev": "rollup -c -w",
-		"prepublishOnly": "npm run build",
-		"postinstall": "[ ! -f dist/svelte-apollo.cjs.js ] && npm run build",
+		"prepublishOnly": "rollup -c",
+		"postinstall": "[ ! -f dist/svelte-apollo.cjs.js ] && rollup -c",
 		"test": "jest",
 		"typecheck": "tsc --noEmit",
 		"format": "prettier --write \"src/**/*.ts\""
