@@ -16,7 +16,6 @@
 		"build": "rollup -c",
 		"dev": "rollup -c -w",
 		"prepublishOnly": "rollup -c",
-		"postinstall": "[ ! -f dist/svelte-apollo.cjs.js ] && npx rollup -c",
 		"test": "jest",
 		"typecheck": "tsc --noEmit",
 		"format": "prettier --write \"src/**/*.ts\""
